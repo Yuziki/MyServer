@@ -82,6 +82,7 @@ void Thread::setDefaultName() {
 void Thread::start() {
     assert(!started_);
     started_ = true;
+    //这里用data和latch主要是为了获取线程的tid
     ThreadData* data = new ThreadData(func_, name_, &tid_, &latch_);
     //创建线程，成功返回0。将data作为参数传入线程运行函数
     if (pthread_create(&pthreadId_, NULL, &startThread, data)) {
