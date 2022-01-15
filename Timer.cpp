@@ -1,4 +1,5 @@
 #include "Timer.h"
+#include "HttpData.h"
 
 #include <sys/time.h>
 

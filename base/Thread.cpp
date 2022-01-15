@@ -33,7 +33,7 @@ struct ThreadData {
     CountDownLatch* latch_;
 
     ThreadData(const ThreadFunc& func, const string& name, pid_t* tid, CountDownLatch* latch)
-        : func_(func), name_(name), tid_(tid_), latch_(latch) {}
+        : func_(func), name_(name), tid_(tid), latch_(latch) {}
     
     void runInThread() {
         *tid_ = CurrentThread::tid();

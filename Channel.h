@@ -3,6 +3,7 @@
 #include "Timer.h"
 
 #include <sys/epoll.h>
+#include <memory>
 
 class EventLoop;
 class HttpData;

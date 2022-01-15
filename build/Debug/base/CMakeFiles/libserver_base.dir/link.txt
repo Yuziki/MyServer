@@ -1,0 +1,2 @@
+/usr/bin/ar cr libserver_base.a  CMakeFiles/libserver_base.dir/CountDownLatch.cpp.o CMakeFiles/libserver_base.dir/Thread.cpp.o
+/usr/bin/ranlib libserver_base.a

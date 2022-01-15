@@ -1,1 +1,2 @@
 /home/jxy/Projects/MyServer/build/Debug/CMakeFiles/MyServer.dir
+/home/jxy/Projects/MyServer/build/Debug/base/CMakeFiles/libserver_base.dir

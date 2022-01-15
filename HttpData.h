@@ -4,6 +4,7 @@
 #include "Channel.h"
 
 #include <map>
+#include <memory>
 #include <unordered_map>
 #include <unistd.h>
 
@@ -90,7 +91,7 @@ private:
     ConnectionState connectionState_;
 
     HttpMethod method_;
-    HttpVersion HttpVersion_;
+    HttpVersion HTTPVersion_;
     std::string fileName_;
     std::string path_;
     int nowReadPos_;

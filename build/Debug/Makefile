@@ -111,29 +111,258 @@ MyServer/fast:
 	$(MAKE) -f CMakeFiles/MyServer.dir/build.make CMakeFiles/MyServer.dir/build
 .PHONY : MyServer/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
+#=============================================================================
+# Target rules for targets named libserver_base
+
+# Build rule for target.
+libserver_base: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 libserver_base
+.PHONY : libserver_base
+
+# fast build rule for target.
+libserver_base/fast:
+	$(MAKE) -f base/CMakeFiles/libserver_base.dir/build.make base/CMakeFiles/libserver_base.dir/build
+.PHONY : libserver_base/fast
+
+Channel.o: Channel.cpp.o
+.PHONY : Channel.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/MyServer.dir/build.make CMakeFiles/MyServer.dir/main.cpp.o
-.PHONY : main.cpp.o
+Channel.cpp.o:
+	$(MAKE) -f CMakeFiles/MyServer.dir/build.make CMakeFiles/MyServer.dir/Channel.cpp.o
+.PHONY : Channel.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+Channel.i: Channel.cpp.i
+.PHONY : Channel.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/MyServer.dir/build.make CMakeFiles/MyServer.dir/main.cpp.i
-.PHONY : main.cpp.i
+Channel.cpp.i:
+	$(MAKE) -f CMakeFiles/MyServer.dir/build.make CMakeFiles/MyServer.dir/Channel.cpp.i
+.PHONY : Channel.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+Channel.s: Channel.cpp.s
+.PHONY : Channel.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/MyServer.dir/build.make CMakeFiles/MyServer.dir/main.cpp.s
-.PHONY : main.cpp.s
+Channel.cpp.s:
+	$(MAKE) -f CMakeFiles/MyServer.dir/build.make CMakeFiles/MyServer.dir/Channel.cpp.s
+.PHONY : Channel.cpp.s
+
+Epoll.o: Epoll.cpp.o
+.PHONY : Epoll.o
+
+# target to build an object file
+Epoll.cpp.o:
+	$(MAKE) -f CMakeFiles/MyServer.dir/build.make CMakeFiles/MyServer.dir/Epoll.cpp.o
+.PHONY : Epoll.cpp.o
+
+Epoll.i: Epoll.cpp.i
+.PHONY : Epoll.i
+
+# target to preprocess a source file
+Epoll.cpp.i:
+	$(MAKE) -f CMakeFiles/MyServer.dir/build.make CMakeFiles/MyServer.dir/Epoll.cpp.i
+.PHONY : Epoll.cpp.i
+
+Epoll.s: Epoll.cpp.s
+.PHONY : Epoll.s
+
+# target to generate assembly for a file
+Epoll.cpp.s:
+	$(MAKE) -f CMakeFiles/MyServer.dir/build.make CMakeFiles/MyServer.dir/Epoll.cpp.s
+.PHONY : Epoll.cpp.s
+
+EventLoop.o: EventLoop.cpp.o
+.PHONY : EventLoop.o
+
+# target to build an object file
+EventLoop.cpp.o:
+	$(MAKE) -f CMakeFiles/MyServer.dir/build.make CMakeFiles/MyServer.dir/EventLoop.cpp.o
+.PHONY : EventLoop.cpp.o
+
+EventLoop.i: EventLoop.cpp.i
+.PHONY : EventLoop.i
+
+# target to preprocess a source file
+EventLoop.cpp.i:
+	$(MAKE) -f CMakeFiles/MyServer.dir/build.make CMakeFiles/MyServer.dir/EventLoop.cpp.i
+.PHONY : EventLoop.cpp.i
+
+EventLoop.s: EventLoop.cpp.s
+.PHONY : EventLoop.s
+
+# target to generate assembly for a file
+EventLoop.cpp.s:
+	$(MAKE) -f CMakeFiles/MyServer.dir/build.make CMakeFiles/MyServer.dir/EventLoop.cpp.s
+.PHONY : EventLoop.cpp.s
+
+EventLoopThread.o: EventLoopThread.cpp.o
+.PHONY : EventLoopThread.o
+
+# target to build an object file
+EventLoopThread.cpp.o:
+	$(MAKE) -f CMakeFiles/MyServer.dir/build.make CMakeFiles/MyServer.dir/EventLoopThread.cpp.o
+.PHONY : EventLoopThread.cpp.o
+
+EventLoopThread.i: EventLoopThread.cpp.i
+.PHONY : EventLoopThread.i
+
+# target to preprocess a source file
+EventLoopThread.cpp.i:
+	$(MAKE) -f CMakeFiles/MyServer.dir/build.make CMakeFiles/MyServer.dir/EventLoopThread.cpp.i
+.PHONY : EventLoopThread.cpp.i
+
+EventLoopThread.s: EventLoopThread.cpp.s
+.PHONY : EventLoopThread.s
+
+# target to generate assembly for a file
+EventLoopThread.cpp.s:
+	$(MAKE) -f CMakeFiles/MyServer.dir/build.make CMakeFiles/MyServer.dir/EventLoopThread.cpp.s
+.PHONY : EventLoopThread.cpp.s
+
+EventLoopThreadPool.o: EventLoopThreadPool.cpp.o
+.PHONY : EventLoopThreadPool.o
+
+# target to build an object file
+EventLoopThreadPool.cpp.o:
+	$(MAKE) -f CMakeFiles/MyServer.dir/build.make CMakeFiles/MyServer.dir/EventLoopThreadPool.cpp.o
+.PHONY : EventLoopThreadPool.cpp.o
+
+EventLoopThreadPool.i: EventLoopThreadPool.cpp.i
+.PHONY : EventLoopThreadPool.i
+
+# target to preprocess a source file
+EventLoopThreadPool.cpp.i:
+	$(MAKE) -f CMakeFiles/MyServer.dir/build.make CMakeFiles/MyServer.dir/EventLoopThreadPool.cpp.i
+.PHONY : EventLoopThreadPool.cpp.i
+
+EventLoopThreadPool.s: EventLoopThreadPool.cpp.s
+.PHONY : EventLoopThreadPool.s
+
+# target to generate assembly for a file
+EventLoopThreadPool.cpp.s:
+	$(MAKE) -f CMakeFiles/MyServer.dir/build.make CMakeFiles/MyServer.dir/EventLoopThreadPool.cpp.s
+.PHONY : EventLoopThreadPool.cpp.s
+
+HttpData.o: HttpData.cpp.o
+.PHONY : HttpData.o
+
+# target to build an object file
+HttpData.cpp.o:
+	$(MAKE) -f CMakeFiles/MyServer.dir/build.make CMakeFiles/MyServer.dir/HttpData.cpp.o
+.PHONY : HttpData.cpp.o
+
+HttpData.i: HttpData.cpp.i
+.PHONY : HttpData.i
+
+# target to preprocess a source file
+HttpData.cpp.i:
+	$(MAKE) -f CMakeFiles/MyServer.dir/build.make CMakeFiles/MyServer.dir/HttpData.cpp.i
+.PHONY : HttpData.cpp.i
+
+HttpData.s: HttpData.cpp.s
+.PHONY : HttpData.s
+
+# target to generate assembly for a file
+HttpData.cpp.s:
+	$(MAKE) -f CMakeFiles/MyServer.dir/build.make CMakeFiles/MyServer.dir/HttpData.cpp.s
+.PHONY : HttpData.cpp.s
+
+Main.o: Main.cpp.o
+.PHONY : Main.o
+
+# target to build an object file
+Main.cpp.o:
+	$(MAKE) -f CMakeFiles/MyServer.dir/build.make CMakeFiles/MyServer.dir/Main.cpp.o
+.PHONY : Main.cpp.o
+
+Main.i: Main.cpp.i
+.PHONY : Main.i
+
+# target to preprocess a source file
+Main.cpp.i:
+	$(MAKE) -f CMakeFiles/MyServer.dir/build.make CMakeFiles/MyServer.dir/Main.cpp.i
+.PHONY : Main.cpp.i
+
+Main.s: Main.cpp.s
+.PHONY : Main.s
+
+# target to generate assembly for a file
+Main.cpp.s:
+	$(MAKE) -f CMakeFiles/MyServer.dir/build.make CMakeFiles/MyServer.dir/Main.cpp.s
+.PHONY : Main.cpp.s
+
+Server.o: Server.cpp.o
+.PHONY : Server.o
+
+# target to build an object file
+Server.cpp.o:
+	$(MAKE) -f CMakeFiles/MyServer.dir/build.make CMakeFiles/MyServer.dir/Server.cpp.o
+.PHONY : Server.cpp.o
+
+Server.i: Server.cpp.i
+.PHONY : Server.i
+
+# target to preprocess a source file
+Server.cpp.i:
+	$(MAKE) -f CMakeFiles/MyServer.dir/build.make CMakeFiles/MyServer.dir/Server.cpp.i
+.PHONY : Server.cpp.i
+
+Server.s: Server.cpp.s
+.PHONY : Server.s
+
+# target to generate assembly for a file
+Server.cpp.s:
+	$(MAKE) -f CMakeFiles/MyServer.dir/build.make CMakeFiles/MyServer.dir/Server.cpp.s
+.PHONY : Server.cpp.s
+
+Timer.o: Timer.cpp.o
+.PHONY : Timer.o
+
+# target to build an object file
+Timer.cpp.o:
+	$(MAKE) -f CMakeFiles/MyServer.dir/build.make CMakeFiles/MyServer.dir/Timer.cpp.o
+.PHONY : Timer.cpp.o
+
+Timer.i: Timer.cpp.i
+.PHONY : Timer.i
+
+# target to preprocess a source file
+Timer.cpp.i:
+	$(MAKE) -f CMakeFiles/MyServer.dir/build.make CMakeFiles/MyServer.dir/Timer.cpp.i
+.PHONY : Timer.cpp.i
+
+Timer.s: Timer.cpp.s
+.PHONY : Timer.s
+
+# target to generate assembly for a file
+Timer.cpp.s:
+	$(MAKE) -f CMakeFiles/MyServer.dir/build.make CMakeFiles/MyServer.dir/Timer.cpp.s
+.PHONY : Timer.cpp.s
+
+Util.o: Util.cpp.o
+.PHONY : Util.o
+
+# target to build an object file
+Util.cpp.o:
+	$(MAKE) -f CMakeFiles/MyServer.dir/build.make CMakeFiles/MyServer.dir/Util.cpp.o
+.PHONY : Util.cpp.o
+
+Util.i: Util.cpp.i
+.PHONY : Util.i
+
+# target to preprocess a source file
+Util.cpp.i:
+	$(MAKE) -f CMakeFiles/MyServer.dir/build.make CMakeFiles/MyServer.dir/Util.cpp.i
+.PHONY : Util.cpp.i
+
+Util.s: Util.cpp.s
+.PHONY : Util.s
+
+# target to generate assembly for a file
+Util.cpp.s:
+	$(MAKE) -f CMakeFiles/MyServer.dir/build.make CMakeFiles/MyServer.dir/Util.cpp.s
+.PHONY : Util.cpp.s
 
 # Help Target
 help:
@@ -144,9 +373,37 @@ help:
 	@echo "... MyServer"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... libserver_base"
+	@echo "... Channel.o"
+	@echo "... Channel.i"
+	@echo "... Channel.s"
+	@echo "... Epoll.o"
+	@echo "... Epoll.i"
+	@echo "... Epoll.s"
+	@echo "... EventLoop.o"
+	@echo "... EventLoop.i"
+	@echo "... EventLoop.s"
+	@echo "... EventLoopThread.o"
+	@echo "... EventLoopThread.i"
+	@echo "... EventLoopThread.s"
+	@echo "... EventLoopThreadPool.o"
+	@echo "... EventLoopThreadPool.i"
+	@echo "... EventLoopThreadPool.s"
+	@echo "... HttpData.o"
+	@echo "... HttpData.i"
+	@echo "... HttpData.s"
+	@echo "... Main.o"
+	@echo "... Main.i"
+	@echo "... Main.s"
+	@echo "... Server.o"
+	@echo "... Server.i"
+	@echo "... Server.s"
+	@echo "... Timer.o"
+	@echo "... Timer.i"
+	@echo "... Timer.s"
+	@echo "... Util.o"
+	@echo "... Util.i"
+	@echo "... Util.s"
 .PHONY : help
 
 

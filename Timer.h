@@ -1,6 +1,5 @@
 #pragma once
 
-#include "HttpData.h"
 #include "base/MutexLock.h"
 #include "base/noncopyable.h"
 
@@ -11,6 +10,7 @@
 class HttpData;
 
 class TimerNode {
+    std::shared_ptr<HttpData> SPHttpData_;  
 public:
     TimerNode(std::shared_ptr<HttpData> requestData, int timeout);
     ~TimerNode();
@@ -24,8 +24,7 @@ public:
 
 private:
     bool deleted_;
-    size_t expiredTime_;
-    std::shared_ptr<HttpData> SPHttpData_;    
+    size_t expiredTime_;  
 };
 
 struct TimerCmp {
